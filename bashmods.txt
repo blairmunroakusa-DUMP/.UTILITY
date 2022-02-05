@@ -1,0 +1,21 @@
+# list of aliases used for wpc
+
+# gh aliases
+gh alias set repo-delete 'api -X DELETE "repos/$1"'
+
+# general aliases
+alias cd='cd -P'
+alias ls='ls -la'
+
+# wpc aliases
+alias leaf='cd ~/_ROOT/___LEAF/'
+alias brnc='cd ~/_ROOT/__BRANCH/'
+alias trnk='cd ~/_ROOT/_TRUNK/'
+alias root='cd ~/_ROOT/'
+
+# git aliases
+gitacp () {
+	git add .
+	git commit -m "$1"
+	git push -u origin master
+}
